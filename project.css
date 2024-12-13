@@ -1,0 +1,141 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.topbar{
+    display: inline-block;
+    
+}
+.topbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    vertical-align: middle; 
+
+}
+
+.topbar ul li img {
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle; 
+    margin-right: 8px; 
+}
+
+.nav ul li{
+    display: inline-block;
+    /* margin-right: 20px; */
+}
+.nav ul li a {
+    text-decoration: none;  
+    font-size: 20px; 
+    padding: 5px 10px; 
+}
+.nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: red; 
+}
+
+.nav {
+    width: 100%;
+    /* background-color: beige; */
+}
+
+.dropdowns {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;  
+}
+
+.dropdowns li {
+    display: inline-block; 
+    vertical-align: text-top;
+    padding: 10px;
+    list-style: none;
+}
+.dropdowns li:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.dropdowns li img{
+    position: relative;
+    bottom: 44px;
+}
+
+.social-media {
+    position: absolute; 
+    top: 18px;  
+    right: 0;  
+    margin-top: 10px; 
+    opacity: .5; 
+}
+
+.social-media ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.social-media  li img:hover{
+   color: blue !important;
+   cursor: pointer;
+}
+
+.social-media ul li {
+    display: inline-block; 
+    align-items: center; 
+    margin-left: 15px;  
+}
+
+.social-media ul li img {
+    width: 20px;
+    height: 20px;
+}
+/* Basic setup for the parent container */
+.banners {
+    width: 100%; /* Full width of the parent container */
+    height: 300px; /* Set a fixed height for the banners */
+    overflow: hidden; /* Hide any content that exceeds the container */
+    position: relative; /* To position the banners inside */
+}
+
+/* Set the banners in a row */
+.banners div {
+    float: left; /* Align all banners side by side */
+    width: 100%; /* Each banner will take the full width */
+    height: 100%; /* Full height of the container */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+}
+
+/* Style for the images */
+.banners img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%;
+    object-fit: cover; /* Make sure images cover the entire area */
+}
+
+/* Keyframes for sliding animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the sliding animation */
+.banners {
+    animation: slide 16s infinite; /* Duration and infinite loop for the slide */
+}
+

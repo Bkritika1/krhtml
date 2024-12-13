@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="sstylesheet" href="styles.css">
+    <style>
+        p::first-line {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* First Letter */
+p::first-letter {
+    font-size: 2em;
+    color: teal;
+}
+
+/* Placeholder Text in Input */
+input::placeholder {
+    font-style: italic;
+    color: orange;
+}
+
+/* Before and After Content */
+h1::before {
+    content: "🔥 ";
+    color: red;
+}
+h1::after {
+    content: " ✨";
+    color: gold;
+}
+  /* Selection */
+  ::selection {
+    background-color: magenta;
+    color: black;
+}
+
+/* Marker in Lists */
+li::marker {
+    color: rgb(255, 149, 0);
+    font-size: 1.5em;
+}
+
+/* Part of Progress Element */
+progress::part(bar) {
+    background-color: red;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elements</h1>
+    <p>This paragraph demonstrates the use of first-line and first-letter pseudo-elements.</p>
+    <input type="text" placeholder="Enter your text here">
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+    <p>Select some text to see the selection pseudo-element in action.</p>
+    <progress value="50" max="100" part="bar"></progress>
+
+    
+</body>
+</html>
+
+
+post api integration....

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: darkgray;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: red;
+}
+
+/* Main container for header */
+main.head {
+    background-color: #444;
+    padding: 15px;
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    position: relative;
+}
+table tbody tr:nth-child(odd) {
+    background-color: orange;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Dropdown styles */
+ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+ul.dropdown li {
+    width: 150px;
+}
+
+ul.dropdown li a {
+    padding: 10px;
+    color: #fff;
+}
+
+nav ul li:hover > ul.dropdown {
+    display: block;
+}
+
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%; 
+    margin-top: 20px;
+    margin-left: 30px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+tr, td{
+    text-align: center;
+}
+th, td{
+    text-align: center;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.dropdown {
+        position: static;
+        box-shadow: none;
+    }
+}
+@media (max-width: 500px){
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        top: 0px;
+        position: relative;
+    }
+    table{
+        border: 1px solid #000 ;
+    }
+    main{
+        height: 1300px;
+    }
+}

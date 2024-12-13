@@ -1,0 +1,37 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.chat-container {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    width: 300px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    
+    flex-direction: column;
+    z-index: 1000; 
+}
+.user-message{
+    display: inline-block;
+    text-align: right;
+    background-color: #f9f9f9;
+    width: 200px;
+}
+.mess{
+    gap: 10px;
+}
+.agent-message{
+    text-align: left;
+    background-color: lightgreen;
+}
+.chat-input{
+    position: absolute;
+}

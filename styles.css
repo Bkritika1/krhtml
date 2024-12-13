@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+ /* First Line of Text */
+ p::first-line {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* First Letter */
+p::first-letter {
+    font-size: 2em;
+    color: teal;
+}
+
+/* Placeholder Text in Input */
+input::placeholder {
+    font-style: italic;
+    color: orange;
+}
+
+/* Before and After Content */
+h1::before {
+    content: "🔥 ";
+    color: red;
+}
+h1::after {
+    content: " ✨";
+    color: gold;
+}
+  /* Selection */
+  ::selection {
+    background-color: magenta;
+    color: black;
+}
+
+/* Marker in Lists */
+li::marker {
+    color: rgb(255, 149, 0);
+    font-size: 1.5em;
+}
+
+/* Part of Progress Element */
+progress::part(bar) {
+    background-color: red;
+}

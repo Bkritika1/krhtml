@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Overflow Examples</title>
+  <style>
+    .container {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+    }
+    .visible {
+      overflow: visible;
+      background: lightcoral;
+    }
+    .hidden {
+      overflow: hidden;
+      background: lightblue;
+    }
+    .scroll {
+      overflow: scroll;
+      background: lightgreen;
+    }
+    .auto {
+      overflow: auto;
+      background: lightyellow;
+    }
+    .xy {
+      overflow-x: auto;/for horizontal scroll/
+      overflow-y: hidden;/for vertical scroll/
+      background: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Overflow Examples</h1>
+  <div class="container">
+    This content overflows the container. It is visible outside the boundaries!
+    This content overflows the container. It is visible outside the boundaries!
+    This content overflows the container. It is visible outside the boundaries!
+  </div>
+
+  <h2>1. Overflow: Visible</h2>
+  <div class="container visible">
+    This content overflows the container. It is visible outside the boundaries!
+    This content overflows the container. It is visible outside the boundaries!
+    This content overflows the container. It is visible outside the boundaries!
+  </div>
+
+  <h2>2. Overflow: Hidden</h2>
+  <div class="container hidden">
+    This content overflows the container. It is visible outside the boundaries!
+    This content overflows the container. It is visible outside the boundaries!
+    This content overflows the container. It is visible outside the boundaries!
+  </div>
+
+  <h2>3. Overflow: Scroll</h2>
+  <div class="container scroll">
+    This content overflows the container. It is visible outside the boundaries!
+    This content overflows the container. It is visible outside the boundaries!
+    This content overflows the container. It is visible outside the boundaries!
+  </div>
+
+  <h2>4. Overflow: Auto</h2>
+  <div class="container auto">
+    This content overflows the container. Scrollbars appear only when needed!
+    This content overflows the container. Scrollbars appear only when needed!
+    This content overflows the container. Scrollbars appear only when needed!
+  </div>
+
+  <h2>5. Overflow-X and Overflow-Y</h2>
+  <div class="container xy">
+    This content overflows horizontally and vertically. Horizontal scrolling is enabled, vertical overflow is clipped.
+    This content overflows horizontally and vertically. Horizontal scrolling is enabled, vertical overflow is clipped.
+    Thiscontentoverflowshorizontallyandvertically. Horizontal scrolling is enabled, vertical overflow is clipped.
+  </div>
+</body>
+</html>

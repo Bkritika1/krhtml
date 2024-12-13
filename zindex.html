@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS z-index Examples</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      
+      margin: 10px;
+    }
+    .red {
+      background: red;
+    }
+    .blue {
+      background: blue;
+      margin-top: -50px;
+    }
+    .z-index1{
+        z-index: 1;
+    }
+    .z-index2{
+        z-index: 2;
+    }
+  </style>
+</head>
+<body>
+    <!-- 
+        The z-index property in CSS controls the stacking order of elements. It determines which elements appear in front of or behind others when they overlap. Elements with a higher z-index value are displayed on top of elements with a lower value.
+
+        Key Points about z-index:
+            Applies to Positioned Elements:
+            The z-index property only works on elements with a position value of relative, absolute, fixed, or sticky. It does not affect elements with position: static.
+
+       Default Value:
+            The default z-index is auto, meaning the element appears in the order it is defined in the HTML.
+
+            Stacking Context:
+            A stacking context is created when an element has:
+
+            A position other than static and a z-index value other than auto.
+            CSS properties like transform, opacity, filter, or perspective applied.
+            Child Stacking Contexts:
+            Elements within a stacking context are ordered relative to that context. A higher z-index value on a child element will not bring it outside its parent's stacking context.
+     -->
+     <h1>CSS z-index Examples</h1>
+
+     <h2>1. Default Stacking Order</h2>
+     <div class="box red">Box 1</div>
+     <div class="box blue">Box 2</div>
+     
+     <h2>2. z-index</h2>
+     <div class="box red z-index1" style="position: relative;">Box 1</div>
+     <div class="box blue" style="position: relative;">Box 2</div>
+ 
+     <h2>3. Higher z-index</h2>
+     <div class="box red z-index1" style="position: relative;">Box 1</div>
+     <div class="box blue z-index2" style="position: relative;">Box 2</div>
+ 
+     <h2>3. Stacking context and z-index</h2>
+     <div style="position: relative; z-index: 2;padding: 10px;border: solid;background-color: lightgrey;">
+         <div class="box red z-index1" style="position: relative;">Box 1</div>
+         <div class="box blue z-index2" style="position: relative;">Box 2</div>
+     </div>
+     <div style="position: relative; z-index: 1;margin-top: -50px; border:solid lightcoral">
+         <div class="box red z-index1" style="position: relative;z-index: 100;">Box 3</div>
+         <div class="box blue z-index2" style="position: relative;">Box 4</div>
+        </div>
+    
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+    
+    
+    
+      
+    </body>
+    </html>
