@@ -1,0 +1,386 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+}
+.dropdown ul {
+    color: white;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+ul li{
+    text-decoration: none;
+}
+.dropdown ul li {
+    text-decoration: none;
+}
+.logo img{
+    width: 80px;
+    height: 67px;
+}
+.leftside{
+    display: flex;
+    align-items: center;
+    padding-left: 164px;
+    /* width: 500px; */
+}
+.upper h1{
+    font-size: 54px;
+    width: 500px;
+
+}
+ul li img{
+    position: absolute;
+    left: 551px;
+    width: 25px;
+    top: 33px;
+}
+.rightside{
+    gap: 20px;
+    display: flex;
+    padding-left: 642px;
+    padding-top: 17px;
+   
+
+}
+.button1{
+    width: 70px;
+    height: 42px;
+    background-color: #000;
+    color: white;
+    border-radius: 26px;
+    border: none;
+
+}
+.button4:hover{
+    background-color: rgba(169, 169, 169, 0.989);
+}
+.button1:hover,.button2:hover,.button3:hover{
+    background-color: rgba(169, 169, 169, 0.399);
+}
+.button2{
+    width: 70px;
+    height: 42px;
+    background-color: #000;
+    border-radius: 26px;
+    border: none;
+    color: white;
+}
+.button3{
+    width: 70px;
+    height: 42px;
+    background-color: #000;
+    border-radius: 26px;
+    border: none;
+    color: white;
+}
+.button4{
+    width: 80px;
+    height: 42px;
+    background-color: #fff;
+    border-radius: 26px;
+    border: none;
+    color:#000;
+} 
+main{
+    padding-left: 200px;
+}
+.images{
+    display: flex;
+    gap: 20px;
+}
+.car{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.car img{
+    position: relative;
+    top: 11px;
+    left: 12px;
+}
+.car p{
+    position: relative;
+    top: 30px;
+}
+.courier p{
+    color: lightgray;
+}
+.courier{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mid{
+    display: flex;              
+    flex-direction: column;
+    gap: 25px;
+}
+.f3{
+    display: flex;
+    gap: 4px;
+}
+.f1{
+    margin-left: -15px;
+}
+.f1 input:focus{
+    border: 2px solid #000;
+}
+.f2 input:focus{
+    border: 2px solid #000;
+}
+.f4 input:focus{
+    border: 2px solid #000;
+}
+.f5 input:focus{
+    border: 2px solid #000;
+}
+.f2{
+    margin-left: -15px;
+}
+.f1 input{
+    width: 400px;
+    height: 50px;
+    padding-left: 30px;
+    border-radius: 6px;
+    border: none;
+    background-color:#8080801c;
+}
+.f2 input{
+    width: 400px;
+    height: 50px;
+    padding-left: 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: #8080801c;
+}
+.f3{
+    position: relative;
+    left: -21px;
+}
+.f4 input{
+    width: 155px;
+    height: 50px;
+    padding-left: 45px;
+    border-radius: 6px;
+    border: none;
+    background-color:#8080801c;
+
+}
+.f5 input{
+    width: 155px;
+    height: 50px;
+    padding-left: 45px;
+    border-radius: 6px;
+    border: none;
+    background-color:#8080801c;
+
+}
+.herobox{
+    padding-top: 80px;
+    display: flex;
+    gap: 66px;
+}
+.button6{
+    width: 133px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.button6 p{
+    font-size: 17px;
+    font-weight: 600;
+}
+.cards{
+    display: flex;
+    gap: 35px;
+    
+}
+.card1{
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    background-color: #d3d3d336;
+    height: 207px;
+    padding: 20px;
+    border-radius:15px;
+}
+.card2{
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    background-color: #d3d3d336;
+    height: 207px;
+    padding: 20px;
+    border-radius:15px;
+}
+.card3{
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    background-color: #d3d3d336;
+    height: 207px;
+    padding: 20px;
+    border-radius:15px;
+}
+.h1cards{
+    padding-top: 100px;
+}
+.btn{
+    width: 78px;
+    height: 38px;
+    border-radius: 35px;
+    border: none;
+    background-color: #ffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.para{
+    font-size: 14px;
+}
+.first{
+    padding-top: 150px;
+}
+.banner{
+    display: flex;
+    gap: 132px;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    padding-top: 82px;
+}
+.bnrh1 h1{
+    width: 351px;
+    font-size: 48px;
+}
+.parabnr{
+    width: 370px;
+    font-size: 16px
+}
+.btnn{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.btnn button{
+    width: 128px;
+    height: 47px;
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+}
+.btnn a{
+    text-decoration: underline;
+    
+}
+.bannerimg img{
+    width: 680px;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    padding-top: 82px;
+
+}
+.second{
+    padding-top: 150px;
+}
+.banner1img img{
+    width: 680px;
+    padding: left 166px;
+
+}
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: white;
+    padding-left: 170px;
+    padding-top: 120px;
+}
+.footerlogo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 45px;
+}
+.footerlogo img{
+    width: 80px;
+    height: 67px;
+}
+.midd{
+    display: flex;
+    gap: 164px;
+}
+.midd ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.icons{
+    display: flex;
+    gap: 106px;
+    padding-top: 45px;
+   
+}
+.icn{
+    display: flex;
+    gap: 500px;
+    align-items: baseline;
+}
+.ftrright{
+    display: flex;
+    gap: 15px;
+}
+.english{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 94px;
+    height: 36px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.english:hover,.delhincr:hover{
+    background-color: rgba(169, 169, 169, 0.399); ;
+}
+.delhincr{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    gap: 4px;
+    align-items: center;
+    width: 101px;
+    height: 36px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.scndlast{
+    display: flex;
+    gap: 30px;
+    padding-top: 83px;
+}
+.last{
+    display: flex;
+    gap: 849px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.plist{
+    display: flex;
+    gap: 30px;
+}
+.footer li {
+    padding-bottom: 20px;
+}

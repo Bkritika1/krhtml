@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <title>Display: flex</title>
+        <style>
+            /* 
+            Flexbox
+                Flexbox, or the Flexible Box Layout, is a modern CSS layout module designed to distribute space within a container and align items efficiently, even when their sizes are dynamic or unknown. Flexbox excels in creating one-dimensional layouts, meaning it works on a single axis (row or column).
+            Why Use Flexbox?
+                Flexbox solves many common layout challenges:
+
+                Dynamic Resizing: Items can grow, shrink, or remain fixed based on available space.
+                Alignment: Provides easy horizontal and vertical alignment of items.
+                Reordering: Items can be visually reordered without altering the source HTML.
+                Adaptability: Works well for responsive designs where elements need to adjust automatically based on screen size.
+            */
+            .container {
+                display: flex; /* Activates Flexbox on the container */
+                flex-direction: column;
+                background-color: lightgray;
+                padding: 10px;
+            }
+
+            .item {
+                background-color: lightblue;
+                padding: 20px;
+                margin: 5px;
+                border: 1px solid #ccc;
+            }
+
+            .inline-container {
+                display: inline-flex; /* Flexbox behavior, but inline */
+                flex-direction: column;
+                background-color: lightgray;
+            }
+
+            .nav-flex {
+                display: flex;
+                background-color: lightcoral;
+                padding: 10px;
+            }
+
+            .nav-inline-flex {
+                display: inline-flex;
+                background-color: lightblue;
+                padding: 10px;
+            }
+
+            a {
+                color: white;
+                margin-right: 15px;
+                text-decoration: none;
+            }
+
+            /* Flexbox properties */
+            /* 
+                flex-direction
+                    The flex-direction property determines the direction in which the flex items are placed within the container. It controls the main axis along which items are aligned.
+
+                    Possible Values:
+                    row (default): Items are placed in a horizontal row, from left to right.
+                    row-reverse: Items are placed in a horizontal row, from right to left.
+                    column: Items are placed in a vertical column, from top to bottom.
+                    column-reverse: Items are placed in a vertical column, from bottom to top.
+
+            */
+            .container-row {
+                display: flex;
+                flex-direction: row; /* Default direction */
+                background-color: lightgray;
+                margin-bottom: 20px;
+            }
+
+            .container-column {
+                display: flex;
+                flex-direction: column; /* Items are stacked vertically */
+                background-color: lightblue;
+            }
+
+            .container-row .item, .container-column .item  {
+                padding: 10px;
+                margin: 5px;
+                background-color: coral;
+                border: 1px solid #ccc;
+            }
+
+            /* 
+                justify-content
+                    The justify-content property controls how items are aligned along the main axis. It is used to distribute space between and around items.
+
+                    Possible Values:
+                    flex-start (default): Items align to the start of the main axis.
+                    flex-end: Items align to the end of the main axis.
+                    center: Items are centered along the main axis.
+                    space-between: Items are evenly distributed, with space between them.
+                    space-around: Items are evenly distributed, with space around them.
+                    space-evenly: Items are evenly distributed, with equal space between and around them.
+            */
+
+            .justify-start {
+                display: flex;
+                justify-content: flex-start; /* Items align to the start */
+                background-color: lightgray;
+                height: 50vh;
+            }
+
+            .justify-space-between {
+                display: flex;
+                justify-content: space-between; /* Equal space between items */
+                background-color: lightblue;
+            }
+
+            .justify-start .item, .justify-space-between .item {
+                padding: 10px;
+                background-color: coral;
+                margin: 5px;
+                border: 1px solid #ccc;
+            }
+
+            /* 
+            align-items
+                The align-items property controls how items are aligned along the cross axis (perpendicular to the main axis).
+
+                Possible Values:
+                stretch (default): Items stretch to fill the container (if no height is set).
+                flex-start: Items align to the start of the cross axis.
+                flex-end: Items align to the end of the cross axis.
+                center: Items are centered along the cross axis.
+                baseline: Items align along their text baseline.
+            */
+
+            .align-center {
+                display: flex;
+                align-items: center; /* Items align to the center */
+                height: 100px;
+                background-color: lightgray;
+            }
+
+            .item {
+                padding: 10px;
+                background-color: coral;
+                border: 1px solid #ccc;
+            }
+
+            
+
+
+        </style>
+    </head>
+    <body>
+        <h2>Display Flex</h2>
+        <div class="container">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <h2>display inline flex</h2>
+        <div>
+            <div class="inline-container">
+              <div class="item">Item 1</div>
+              <div class="item">Item 2</div>
+            </div>
+            <p>Text flows here after the inline container.</p>
+        </div>
+
+        <div>
+            <nav class="nav-flex">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </nav>
+            <p>Flex navigation appears as a block.</p>
+            
+            <nav class="nav-inline-flex">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </nav>
+            <p>Inline-flex navigation flows inline with this text.</p>
+        </div>
+
+        <h2>Flex directions</h2>
+        <div class="container-row">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+          
+        <div class="container-column">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+
+        <h2>Justify-content</h2>
+        <div class="justify-start .align-items">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+          </div>
+          
+          <div class="justify-space-between">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+          </div>
+
+          <h2>align-items</h2>
+          <div class="align-center">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+          </div>
+          
+          
+          
+          
+          
+          
+    </body>
+</html>

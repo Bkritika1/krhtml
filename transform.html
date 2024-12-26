@@ -1,0 +1,173 @@
+Css Transformation:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transformations Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .example {
+            margin-bottom: 40px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 100px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* translate example */
+        .translate {
+            transform: translate(200px, 20px); /* Moves 50px right and 20px down */
+        }
+
+        /* translateX example */
+        .translateX {
+            transform: translateX(60px); /* Moves 60px to the right */
+        }
+
+        /* translateY example */
+        .translateY {
+            transform: translateY(40px); /* Moves 40px down */
+        }
+
+        /* rotate example */
+        .rotate {
+            transform: rotate(45deg); /* Rotates 45 degrees clockwise */
+        }
+
+        /* scale example */
+        .scale {
+            transform: scale(.5, .5); /* Scales 1.5 times horizontally and 1.2 times vertically */
+        }
+
+        /* scaleX example */
+        .scaleX {
+            transform: scaleX(2); /* Doubles the width */
+        }
+
+        /* scaleY example */
+        .scaleY {
+            transform: scaleY(0.5); /* Halves the height */
+        }
+
+        /* skew example */
+        .skew {
+            transform: skew(20deg, 10deg); /* Skews 20 degrees on X-axis and 10 degrees on Y-axis */
+        }
+
+        /* skewX example */
+        .skewX {
+            transform: skewX(30deg); /* Skews 30 degrees on X-axis */
+        }
+
+        /* skewY example */
+        .skewY {
+            transform: skewY(20deg); /* Skews 20 degrees on Y-axis */
+        }
+          
+      .without-transform-origin {
+        transform: rotate(45deg);
+      }
+        /* transform-origin example */
+        .transform-origin {
+            transform: rotate(45deg); /* Rotates 45 degrees */
+             transform-origin: bottom right;/* Sets the origin to the top-left corner */
+        }
+
+        /* transform shorthand example */
+        .transform-shorthand {
+            transform: translate(30px, 20px) rotate(30deg) scale(1.2); /* Combines multiple transformations */
+        }
+    </style>
+</head>
+<body>
+    <h1>2D Transformations Examples</h1>
+
+    <div class="example">
+        <h2>translate(x, y)</h2>
+        <p>Moves the element by the specified X and Y offsets.</p>
+        <div class="box translate">translate</div>
+    </div>
+
+    <div class="example">
+        <h2>translateX(x)</h2>
+        <p>Moves the element horizontally by the specified offset.</p>
+        <div class="box translateX">translateX</div>
+    </div>
+
+    <div class="example">
+        <h2>translateY(y)</h2>
+        <p>Moves the element vertically by the specified offset.</p>
+        <div class="box translateY">translateY</div>
+    </div>
+
+    <div class="example">
+        <h2>rotate(angle)</h2>
+        <p>Rotates the element clockwise by the specified angle.</p>
+        <div class="box rotate">rotate</div>
+    </div>
+
+    <div class="example">
+        <h2>scale(x, y)</h2>
+        <p>Scales the element horizontally and vertically.</p>
+        <div class="box scale">scale</div>
+    </div>
+
+    <div class="example">
+        <h2>scaleX(x)</h2>
+        <p>Scales the element horizontally.</p>
+        <div class="box scaleX">scaleX</div>
+    </div>
+
+    <div class="example">
+        <h2>scaleY(y)</h2>
+        <p>Scales the element vertically.</p>
+        <div class="box scaleY">scaleY</div>
+    </div>
+
+    <div class="example">
+        <h2>skew(x-angle, y-angle)</h2>
+        <p>Skews the element along both the X and Y axes.</p>
+        <div class="box skew">skew</div>
+    </div>
+
+    <div class="example">
+        <h2>skewX(angle)</h2>
+        <p>Skews the element along the X-axis.</p>
+        <div class="box skewX">skewX</div>
+    </div>
+
+    <div class="example">
+        <h2>skewY(angle)</h2>
+        <p>Skews the element along the Y-axis.</p>
+        <div class="box skewY">skewY</div>
+    </div>
+
+    <div class="example">
+        <h2>transform-origin</h2>
+        <p>Sets the point of origin for the transformation.</p>
+        <div class="box without-transform-origin">transform-origin</div>
+        <div class="box transform-origin">transform-origin</div>
+    </div>
+
+    <div class="example">
+        <h2>transform (shorthand)</h2>
+        <p>Combines multiple transformations into one declaration.</p>
+        <div class="box transform-shorthand">transform</div>
+    </div>
+
+</body>
+</html>

@@ -6,7 +6,7 @@ body {
 }
 
 
-.chat-container {
+/* .chat-container {
     position: fixed;
     bottom: 20px; 
     right: 20px; 
@@ -27,6 +27,7 @@ body {
 }
 .mess{
     gap: 10px;
+    display: block;
 }
 .agent-message{
     text-align: left;
@@ -34,4 +35,25 @@ body {
 }
 .chat-input{
     position: absolute;
+} */
+
+
+.chat-container{
+    width: 450px;
+    max-height: 380px;
+
+}
+.chat-header{
+    background-color: white;
+    color: blue;
+}
+.send-button{
+    background-color: blue;
+    color: #ffff;
+}
+.messages{
+    gap: 20px;
+}
+.user-message{
+    background-color: #ffff;
 }

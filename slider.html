@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Image Slider</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+    }
+
+    .slider-container {
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slider-images {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .slider-images img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .navigation {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      transform: translateY(-50%);
+    }
+
+    .navigation label {
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 10px;
+      margin: 0 5px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* Initially show the first image */
+    #slide-1:checked ~ .slider-images {
+      transform: translateX(0);
+    }
+
+    #slide-2:checked ~ .slider-images {
+      transform: translateX(-100%);
+    }
+
+    #slide-3:checked ~ .slider-images {
+      transform: translateX(-200%);
+    }
+
+    #slide-4:checked ~ .slider-images {
+      transform: translateX(-300%);
+    }
+
+    /* Navigation dots (optional) */
+    .navigation label:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <div class="slider-images">
+      <img src="Shawarma.avif" alt="Image 1">
+      <img src="Shawarma.avif" alt="Image 2">
+      <img src="Shawarma.avif" alt="Image 3">
+      <img src="Shawarma.avif" alt="Image 4">
+    </div>
+
+    <div class="navigation">
+      <input type="radio" id="slide-1" name="slider" checked>
+      <input type="radio" id="slide-2" name="slider">
+      <input type="radio" id="slide-3" name="slider">
+      <input type="radio" id="slide-4" name="slider">
+
+      <label for="slide-1"></label>
+      <label for="slide-2"></label>
+      <label for="slide-3"></label>
+      <label for="slide-4"></label>
+    </div>
+  </div>
+</body>
+</html>

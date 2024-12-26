@@ -1,0 +1,84 @@
+.header{
+    width: 100%;
+    height: auto;
+}
+.leftside{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hamburger img{
+    width: 30px;
+    height: 30px;
+
+}
+.logo img{
+    width: 150px;
+    height: 80px;
+}
+.alldiv{
+    display: flex;
+    gap: 267px;
+}
+.seaarchbar{
+    display: flex;
+    
+}
+.seaarchbar input{
+    width: 600px;
+    height: 45px;
+    border-radius: 26px;
+    border: 1px solid grey;
+    padding-left: 14px;
+
+}
+.middle{
+    padding-top: 17px;
+}
+.seaarchbar .search{
+    position: relative;
+    left: -40px;
+
+}
+
+.mic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #80808054;
+}
+.mic img{
+    position: relative;
+    top: 11px;
+    left: 11px;
+}
+.rightside{
+    padding-top: 17px;
+    display: flex;
+    gap: 10px;
+}
+.create button{
+    border: none;
+    width: 110px;
+    height: 54px;
+    background-color: #80808054 ;
+    border-radius: 26px;
+
+}
+.logok{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(104, 25, 104);
+}
+.button text{
+    align-items: center;
+}
+.logok img{
+    position: relative;
+    top: 14px;
+    left: 15px;
+}
+.notification img{
+    padding-top: 10px;
+}
